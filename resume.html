@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Girish Wadhwani</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Girish Wadhwani</h1>
+        <nav>
+            <ul>
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="resume.html" class="active">Resume</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="resume-section">
+            <h2>My Resume</h2>
+            <p>
+                For a detailed overview of my academic background, projects, skills, and experiences, please download my full resume.
+            </p>
+            <a href="Girish Wadhwani Resume.pdf" download class="btn resume-btn">Download Resume (PDF)</a> 
+            
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Girish Wadhwani. All rights reserved.</p>
+        <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    </footer>
+</body>
+</html>

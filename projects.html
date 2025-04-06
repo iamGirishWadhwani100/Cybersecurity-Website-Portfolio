@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Girish Wadhwani</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Girish Wadhwani</h1>
+        <nav>
+            <ul>
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Projects Showcase</h2>
+
+            <article class="project-item">
+                <h3>Network Traffic Analyzer</h3>
+                <p><strong>Description:</strong> [Explain what the project does. e.g., Developed a script/tool to capture and analyze network traffic to identify patterns, protocols in use, and potential anomalies indicative of security issues. Focused on understanding communication flows within a network segment.]</p>
+                <p><strong>Key Features:</strong> [List 2-3 key functionalities. e.g., Packet capture using specific filters, basic protocol identification, summary statistics of traffic volume, flagging traffic to/from known malicious IPs (using a predefined list).] </p>
+                <p><strong>Tools & Technologies:</strong> [List tools used. e.g., Wireshark/Tshark concepts, Python (potentially with Scapy or dpkt library), Linux command-line tools.]</p>
+                <p><strong>Learning Outcomes:</strong> [What did you learn? e.g., Gained practical experience in network packet structure, traffic analysis techniques, scripting for automation, and understanding normal vs. potentially malicious network behavior.]</p>
+                </article>
+
+            <hr class="project-divider">
+
+            <article class="project-item">
+                <h3>WiFi Security Experiments (Lab Environment)</h3>
+                 <p><strong>Description:</strong> [Explain the project. e.g., Conducted experiments within a controlled and isolated lab environment to understand and assess the security of different WiFi protocols (WEP, WPA, WPA2). Focused on analyzing handshake captures and understanding common attack vectors.]</p>
+                 <p><strong>Activities:</strong> [List specific activities. e.g., Set up access points with different security settings, captured WPA2 handshakes using monitor mode, explored techniques for analyzing captured data (strictly within the ethical confines of the lab).] </p>
+                 <p><strong>Tools & Technologies:</strong> [List tools used. e.g., Aircrack-ng suite (airmon-ng, airodump-ng, aireplay-ng - use ethically!), Wireshark, Kali Linux, dedicated wireless adapter supporting monitor mode.]</p>
+                 <p><strong>Learning Outcomes:</strong> [What did you learn? e.g., Practical understanding of WiFi handshake processes, differences between security protocols, importance of strong passwords, ethical considerations surrounding wireless security testing.]</p>
+                 </article>
+
+            <hr class="project-divider">
+
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Girish Wadhwani. All rights reserved.</p>
+        <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    </footer>
+</body>
+</html>
