@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Girish Wadhwani</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <header>
+        <h1>Girish Wadhwani</h1>
+        <nav>
+            <ul>
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Blog / Writeups</h2>
+            <p>Here I share some thoughts, insights, and notes from my cybersecurity learning journey, particularly focusing on offensive security concepts and the attacker mindset.</p>
+
+            <article class="blog-post">
+                <h3>Thinking Like an Attacker: Why Reconnaissance is King in Offensive Security</h3>
+                <p class="post-meta">By Girish Wadhwani | Published on: April 11, 2025</p>
+
+                <h4>Introduction</h4>
+                <p>
+                    In the world of cybersecurity, we often hear about sophisticated exploits and complex malware. However, long before any code is executed or vulnerability exploited, a critical phase dictates the potential success or failure of an offensive operation: Reconnaissance. As I delve deeper into the realms of offensive security and red teaming, it's become increasingly clear that meticulous reconnaissance isn't just the first step – it's arguably the most crucial. It’s about shifting your mindset to think like an adversary, understanding that information is the ultimate weapon.
+                </p>
+
+                <h4>What is Reconnaissance? The Art of Information Gathering</h4>
+                <p>
+                    At its core, reconnaissance is the practice of gathering information about a target system, network, or organization. This process can be broadly categorized into:
+                </p>
+                <ul>
+                    <li><strong>Passive Reconnaissance:</strong> Gathering information without directly interacting with the target's systems. This involves leveraging publicly available resources – often called Open Source Intelligence (OSINT). Think search engines (Google Hacking/Dorking), social media, job postings, company websites, public records, tools like Shodan that scan the internet, and analyzing DNS records. The goal is to build a picture of the target's digital footprint quietly.</li>
+                    <li><strong>Active Reconnaissance:</strong> Directly probing the target's infrastructure to gather more specific technical details. This is where tools often come into play. Techniques include port scanning (using tools like Nmap or Zenmap to see what services are open), banner grabbing (identifying software versions running on services), DNS zone transfers (if misconfigured), and network mapping. This phase carries more risk of detection but yields more detailed technical data.</li>
+                </ul>
+
+                <h4>Why Reconnaissance is "King"</h4>
+                <p>
+                    Calling reconnaissance "king" isn't an exaggeration. Here's why it holds such strategic importance:
+                </p>
+                <ul>
+                    <li><strong>Mapping the Attack Surface:</strong> Effective recon identifies potential entry points – open ports, vulnerable services, misconfigured web applications, exposed credentials, or even social engineering opportunities. Without knowing what doors exist, you can't pick the right lock.</li>
+                    <li><strong>Informing Attack Strategy:</strong> The information gathered dictates the most viable attack paths. Is there an unpatched web server? An exposed database? Weak credentials on an administrative portal? Recon helps prioritize targets and select the appropriate tools and techniques (TTPs), minimizing wasted effort and noise.</li>
+                    <li><strong>Reducing Detection Risk:</strong> A well-researched attack, informed by thorough recon, can be more targeted and stealthy. Understanding the target environment allows attackers (or red teamers simulating them) to blend in better and avoid triggering obvious alarms. Spray-and-pray attacks are noisy; surgical strikes based on intel are less so.</li>
+                    <li><strong>Foundation for Exploitation & Beyond:</strong> Information gathered during recon (like software versions, usernames, network layouts) is often essential for successful exploitation, privilege escalation, and lateral movement later in the attack lifecycle (often mapped by frameworks like MITRE ATT&CK).</li>
+                </ul>
+
+                <h4>More Than Just Tools</h4>
+                <p>
+                    While tools like Nmap, OSINT frameworks, and scanners are powerful enablers, effective reconnaissance is fundamentally a <em>mindset</em>. It requires:
+                </p>
+                 <ul>
+                    <li><strong>Curiosity:</strong> Asking "What else is connected?" "How does this system interact with others?" "What information <em>shouldn't</em> be public?"</li>
+                    <li><strong>Patience:</strong> Sifting through large amounts of data, sometimes finding nothing, sometimes finding a tiny thread to pull on.</li>
+                    <li><strong>Analytical Thinking:</strong> Piecing together disparate bits of information from various sources to build a coherent picture of the target.</li>
+                </ul>
+
+                <h4>Bridging to Defense</h4>
+                <p>
+                    Understanding reconnaissance isn't just for attackers or red teams. For blue teams (defenders), knowing how adversaries gather information is vital for effective defense. It helps prioritize efforts in reducing the public attack surface, configuring monitoring to detect scanning activities, implementing strong access controls, and training users against phishing and social engineering – essentially, making the reconnaissance phase harder and less fruitful for potential attackers.
+                </p>
+
+                <h4>Conclusion</h4>
+                <p>
+                    Reconnaissance is the bedrock of any planned offensive security operation. It’s the intelligence-gathering phase that informs strategy, enables precision, and significantly increases the probability of success. Mastering the tools is important, but cultivating the patient, curious, and analytical mindset of an attacker during this phase is what truly separates effective operations from noise. As someone fascinated by offensive security, exploring the depth and breadth of reconnaissance continues to be a cornerstone of my learning journey.
+                </p>
+                <p><em><small>(Disclaimer: The tools and techniques discussed should only be used legally and ethically, for educational purposes or authorized security testing.)</small></em></p>
+            </article>
+
+            <hr class="project-divider"> </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Girish Wadhwani. All rights reserved.</p>
+        <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+    </footer>
+</body>
+</html>
